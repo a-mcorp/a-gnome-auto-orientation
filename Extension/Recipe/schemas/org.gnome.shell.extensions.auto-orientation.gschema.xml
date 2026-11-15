@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.auto-orientation"
+    path="/org/gnome/shell/extensions/auto-orientation/">
+    <key name="orientation" type="s">
+      <choices>
+        <choice value="auto" />
+        <choice value="landscape" />
+        <choice value="portrait-right" />
+        <choice value="landscape-flipped" />
+        <choice value="portrait-left" />
+      </choices>
+      <default>"auto"</default>
+      <summary>Screen orientation</summary>
+      <description>"auto" follows the accelerometer; the other values set a fixed orientation of the built-in screen.</description>
+    </key>
+    <key name="sensor-offset" type="i">
+      <range min="0" max="3" />
+      <default>0</default>
+      <summary>Auto correction</summary>
+      <description>Quarter turns (0-3) added to every accelerometer reading in Auto mode, for sensors mounted at an angle to the screen.</description>
+    </key>
+    <key name="sensor-calibrated" type="b">
+      <default>false</default>
+      <summary>Auto correction set</summary>
+      <description>Whether the correction has been set. If false, the first accelerometer reading in Auto sets it, so the current position keeps the current screen orientation.</description>
+    </key>
+  </schema>
+</schemalist>
