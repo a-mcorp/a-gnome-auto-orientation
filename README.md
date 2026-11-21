@@ -15,7 +15,7 @@
 - Format: GNOME Shell extension (`auto-orientation@a-matthew.github.io`).
   -  this extension is currently **not** published, but upon further testing it might be.
 - License:
-  - This project's license: [GNU General Public License v3.0](LICENSE)
+  - This project's license: [GNU General Public License v3.0](LICENSE), with additional terms (attribution, name) in [NOTICE](NOTICE); Copyright © 2026 Mateusz Adamczyk (M.A.)
   <!-- - Dependency-1: [{dependency-1-name}]({dependency-1-license}) -->
   <!-- - Dependency-2: [{dependency-2-name}]({dependency-2-license}) -->
 
@@ -150,6 +150,7 @@ Deno environment (the binary, cache and tools stay inside `denoenv-2.9.8`):
 ├── deno.lock                      # Pinned dependency versions
 ├── lefthook.yml                   # Formatters and linters bundle (local CI)
 ├── LICENSE                        # Project license
+├── NOTICE                         # Copyright and additional licence terms
 ├── README.md                      # Project documentation
 └── tsconfig.json                  # TypeScript compiler configuration (type check and transpiling)
 ```

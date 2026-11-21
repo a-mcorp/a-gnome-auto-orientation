@@ -30,6 +30,7 @@ Template
 - Testing steps for a virtual machine and for the laptop in `Extension/README.md`, and a testing log in `Extension/TESTING.md`.
 
 ### Changed
+- `NOTICE` with the copyright and additional section 7 terms (attribution, name) to GPL-3.0-or-later, referenced in `README.md`; `Extension/README.md` names the extension's own licence.
 - Replaced the example extension of the template with Auto Orientation (metadata, settings schema and source code).
 - `README.md` layout: Features above the two screenshots in one table, and Dependencies next to Usage; the screenshots moved into `docs/`.
 
