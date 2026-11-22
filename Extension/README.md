@@ -110,7 +110,7 @@ On first use, Auto sets the correction by itself: the first accelerometer readin
 2. click **Set Current Position as Default** in the top bar menu (in any mode; outside Auto, the extension reads the accelerometer once)
 3. select **Auto**, and turn the device through all four positions: the screen should follow each one
 
-The correction is saved as `sensor-offset` (quarter turns) and shown as **Auto correction** in the preferences, where it can also be set by hand. To repeat the first-use calibration, reset both keys: `gsettings --schemadir ~/.local/share/gnome-shell/extensions/auto-orientation@a-matthew.github.io/schemas reset org.gnome.shell.extensions.auto-orientation sensor-calibrated` (and the same with `sensor-offset`).
+The correction is saved as `sensor-offset` (quarter turns) and shown as **Auto correction** in the preferences, where it can also be set by hand. To repeat the first-use calibration, reset both keys: `gsettings --schemadir ~/.local/share/gnome-shell/extensions/auto-orientation@a-mcorp.github.io/schemas reset org.gnome.shell.extensions.auto-orientation sensor-calibrated` (and the same with `sensor-offset`).
 
 ### Testing
 Auto Orientation is tested in two steps: first in a virtual machine, which protects the desktop from a broken build, then on the laptop, which has the accelerometer.
@@ -118,20 +118,20 @@ The results and issues found so far are recorded in [TESTING.md](TESTING.md).
 
 #### In a virtual machine
 The virtual machine has no accelerometer, so only the manual orientations, the menu and the preferences can be tested.
-1. `deno task pack`, then copy `auto-orientation@a-matthew.github.io.shell-extension.zip` into the virtual machine
-2. `gnome-extensions install --force auto-orientation@a-matthew.github.io.shell-extension.zip`
-3. log out and back in, then `gnome-extensions enable auto-orientation@a-matthew.github.io`
-4. pick each orientation from the top bar menu (in a rotated orientation, clicks land in the wrong place, see [TESTING.md](TESTING.md)), then turn the extension off (`gnome-extensions disable auto-orientation@a-matthew.github.io`): the screen must return to its original orientation
+1. `deno task pack`, then copy `auto-orientation@a-mcorp.github.io.shell-extension.zip` into the virtual machine
+2. `gnome-extensions install --force auto-orientation@a-mcorp.github.io.shell-extension.zip`
+3. log out and back in, then `gnome-extensions enable auto-orientation@a-mcorp.github.io`
+4. pick each orientation from the top bar menu (in a rotated orientation, clicks land in the wrong place, see [TESTING.md](TESTING.md)), then turn the extension off (`gnome-extensions disable auto-orientation@a-mcorp.github.io`): the screen must return to its original orientation
 5. check the log for errors: `journalctl -b 0 -o cat /usr/bin/gnome-shell | grep -i auto-orientation`
 
 #### On the laptop
-1. `deno task pack` and `deno task install`, log out and back in, then `gnome-extensions enable auto-orientation@a-matthew.github.io`
+1. `deno task pack` and `deno task install`, log out and back in, then `gnome-extensions enable auto-orientation@a-mcorp.github.io`
 2. select Auto, and turn the laptop through all four positions: the screen follows each one after 1 second
 3. lock and unlock the screen: the orientation returns to landscape while locked, and follows the sensor again after unlocking
 
 #### General tips
   - `deno task devkit` starts a nested GNOME Shell in a window, with its own session, so the extension can be tested without logging out (GNOME 49 and later, needs `mutter-devkit`). Install and enable the extension first.
-  - The preferences process can be restarted any time: close the window and run `gnome-extensions prefs auto-orientation@a-matthew.github.io` again.
+  - The preferences process can be restarted any time: close the window and run `gnome-extensions prefs auto-orientation@a-mcorp.github.io` again.
   - Test the lock screen: lock and unlock the session once, since this calls `disable()` and `enable()`.
 
 > 🚧

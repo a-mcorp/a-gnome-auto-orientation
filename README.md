@@ -12,7 +12,7 @@
 <!-- - Author: {author-name}/{author-alias}. -->
 - Name: 'a-gnome-auto-orientation'.
 - Purpose: automatic screen rotation from the accelerometer, for convertible laptops that GNOME does not detect as tablets (e.g. CHUWI MiniBook X).
-- Format: GNOME Shell extension (`auto-orientation@a-matthew.github.io`).
+- Format: GNOME Shell extension (`auto-orientation@a-mcorp.github.io`).
   -  this extension is currently **not** published, but upon further testing it might be.
 - License:
   - This project's license: [GNU General Public License v3.0](LICENSE), with additional terms (attribution, name) in [NOTICE](NOTICE); Copyright © 2026 Mateusz Adamczyk (M.A.)
@@ -78,7 +78,7 @@
 <td valign="top">
 
   - project
-    - the orientation is set from the top bar icon, or in the preferences: `gnome-extensions prefs auto-orientation@a-matthew.github.io`
+    - the orientation is set from the top bar icon, or in the preferences: `gnome-extensions prefs auto-orientation@a-mcorp.github.io`
   - local CI
     - `lefthook run check`
       - Files must be first added by `git add` for `lefthook run` to detect.
@@ -87,9 +87,9 @@
     - `deno task typecheck` (the type check of `src/`, without lefthook)
   - local CD
     1. `deno task build` (transpiles `src/` and copies `Extension/Recipe` into `dist/`)
-    2. `deno task pack` (creates `auto-orientation@a-matthew.github.io.shell-extension.zip`)
+    2. `deno task pack` (creates `auto-orientation@a-mcorp.github.io.shell-extension.zip`)
     3. `deno task install` (installs the zip into `~/.local/share/gnome-shell/extensions/`)
-    4. log out and back in, then `gnome-extensions enable auto-orientation@a-matthew.github.io`
+    4. log out and back in, then `gnome-extensions enable auto-orientation@a-mcorp.github.io`
   - testing and debugging
     - `deno task devkit` (a nested GNOME Shell in a window, GNOME 49 and later)
     - `deno task logs` (the GNOME Shell log, including extension errors)

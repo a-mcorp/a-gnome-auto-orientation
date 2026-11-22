@@ -19,7 +19,7 @@ Template
 ## [1.0.0] - 2026-11-22
 
 ### Added
-- Auto Orientation extension (`auto-orientation@a-matthew.github.io`) for GNOME Shell 50 and 51.
+- Auto Orientation extension (`auto-orientation@a-mcorp.github.io`) for GNOME Shell 50 and 51.
   - Automatic rotation of the built-in screen in all four orientations, from the accelerometer of `iio-sensor-proxy`, after a stable reading of 1 second.
   - Manual orientations (Landscape, Portrait Right, Landscape (Flipped), Portrait Left), named and mapped as in GNOME Settings.
   - Rotation through `org.gnome.Mutter.DisplayConfig` with the temporary method, so the rotation is not saved into `monitors.xml`.

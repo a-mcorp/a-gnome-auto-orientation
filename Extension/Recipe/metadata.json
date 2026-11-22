@@ -1,10 +1,10 @@
 {
-  "uuid": "auto-orientation@a-matthew.github.io",
+  "uuid": "auto-orientation@a-mcorp.github.io",
   "name": "Auto Orientation",
   "description": "Rotates the built-in screen from the accelerometer, also on convertibles that GNOME does not detect as tablets. The orientation can also be set by hand from the top bar.",
   "shell-version": ["50", "51"],
   "url": "https://github.com/a-mcorp/a-gnome-auto-orientation",
   "settings-schema": "org.gnome.shell.extensions.auto-orientation",
-  "gettext-domain": "auto-orientation@a-matthew.github.io",
+  "gettext-domain": "auto-orientation@a-mcorp.github.io",
   "version-name": "1.0.0"
 }
