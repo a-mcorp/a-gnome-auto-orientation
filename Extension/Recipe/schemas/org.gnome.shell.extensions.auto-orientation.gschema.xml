@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ================================
+  Name: 'a-gnome-auto-orientation'/Extension/Recipe/schemas/org.gnome.shell.extensions.auto-orientation.gschema.xml
+  Source: https://github.com/a-mcorp/a-gnome-auto-orientation
+  SPDX-License-Identifier: GPL-3.0-or-later
+  Year: 2026
+  ================================
+-->
 <schemalist>
   <schema id="org.gnome.shell.extensions.auto-orientation"
     path="/org/gnome/shell/extensions/auto-orientation/">

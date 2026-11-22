@@ -1,3 +1,10 @@
+// ================================
+// Name: 'a-gnome-auto-orientation'/src/prefs.ts
+// Source: https://github.com/a-mcorp/a-gnome-auto-orientation
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Year: 2026
+// ================================
+
 import Adw from "gi://Adw";
 import Gtk from "gi://Gtk";
 import {

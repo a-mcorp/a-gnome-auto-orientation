@@ -1,3 +1,10 @@
+// ================================
+// Name: 'a-gnome-auto-orientation'/src/extension.ts
+// Source: https://github.com/a-mcorp/a-gnome-auto-orientation
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Year: 2026
+// ================================
+
 import Gio from "gi://Gio";
 import GLib from "gi://GLib";
 import St from "gi://St";
